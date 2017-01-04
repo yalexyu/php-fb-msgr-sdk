@@ -1,5 +1,5 @@
 {
-  "name": "yalexyu/php-fb-msgr-sdk",
+  "name": "alexyu/php-fb-msgr-sdk",
   "description": "PHP Facebook Messenger SDK",
   "keywords": ["library", "facebook", "messenger"],
   "license": "MIT",
