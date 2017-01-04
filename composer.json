@@ -1,11 +1,11 @@
 {
-  "name": "alexyu/php-fb-msgr-sdk",
+  "name": "yalexyu/php-fb-msgr-sdk",
   "description": "PHP Facebook Messenger SDK",
   "keywords": ["library", "facebook", "messenger"],
   "license": "MIT",
   "support": {
-    "issues": "https://gitlab.com/alexyu/php-fb-msgr-sdk/issues",
-    "source": "https://gitlab.com/alexyu/php-fb-msgr-sdk"
+    "issues": "https://github.com/yalexyu/php-fb-msgr-sdk/issues",
+    "source": "https://github.com/yalexyu/php-fb-msgr-sdk"
   },
   "authors": [
     {
