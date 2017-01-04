@@ -1,0 +1,25 @@
+{
+  "name": "yalexyu/php-fb-msgr-sdk",
+  "description": "PHP Facebook Messenger SDK",
+  "keywords": ["library", "facebook", "messenger"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://gitlab.com/alexyu/php-fb-msgr-sdk/issues",
+    "source": "https://gitlab.com/alexyu/php-fb-msgr-sdk"
+  },
+  "authors": [
+    {
+      "name": "Young Yu",
+      "email": "alex@young-yu.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "FBMSGR\\": "src/"
+    }
+  },
+  "minimum-stability": "master"
+}
