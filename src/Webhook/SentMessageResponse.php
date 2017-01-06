@@ -40,9 +40,9 @@ class SentMessageResponse extends WebhookBaseModel
     {
         parent::__construct($data);
 
-        $this->recipientId = $data['recipient_id'];
-        $this->mid = $data['message_id'];
-        $this->error = $data['error'];
+        $this->recipientId = isset($data['recipient_id']) ? $data['recipient_id'] : null;
+        $this->mid = isset($data['message_id']) ? $data['message_id'] : null;
+        $this->error = isset($data['error']) ? $data['error'] : null;
     }
 
     public function hasError()
