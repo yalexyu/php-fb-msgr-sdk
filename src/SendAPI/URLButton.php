@@ -53,6 +53,23 @@ class URLButton extends Button
     protected $fallbackUrl = null;
 
     /**
+     * Indicates whether this URL button is being used as a default action
+     * for a generic template attachment. If TRUE, then $this->title becomes OPTIONAL.
+     *
+     * @var bool
+     */
+    protected $isDefaultAction = false;
+
+    /**
+     * URLButton constructor.
+     * @param bool $isDefaultAction
+     */
+    public function __construct($isDefaultAction = false)
+    {
+        $this->isDefaultAction = $isDefaultAction;
+    }
+
+    /**
      * The button type. Must be TYPE_URL.
      *
      * @return string
@@ -72,9 +89,12 @@ class URLButton extends Button
         $data = [
             'type' => $this->getType(),
             'url' => $this->url,
-            'title' => $this->title,
             'webview_height_ratio' => $this->webviewHeightRatio,
         ];
+
+        if (!$this->isDefaultAction || $this->title) {
+            $data['title'] = $this->title;
+        }
 
         if ($this->messengerExtensions && $this->fallbackUrl) {
             $data['messenger_extensions'] = $this->messengerExtensions;

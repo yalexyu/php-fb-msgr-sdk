@@ -8,11 +8,11 @@
 namespace FBMSGR\SendAPI;
 
 /**
- * Class TemplateElement
+ * Class GenericTemplateElement
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/generic-template#element
  * @package FBMSGR\SendAPI
  */
-class TemplateElement extends SendBaseModel
+class GenericTemplateElement extends SendBaseModel
 {
 
     /**
@@ -64,10 +64,19 @@ class TemplateElement extends SendBaseModel
     {
         $data = [
             'title' => $this->title,
-            'subtitle' => $this->subtitle,
-            'image_url' => $this->imageUrl,
-            'default_action' => $this->defaultAction->toArray(),
         ];
+
+        if ($this->subtitle) {
+            $data['subtitle'] = $this->subtitle;
+        }
+
+        if ($this->imageUrl) {
+            $data['image_url'] = $this->imageUrl;
+        }
+
+        if ($this->defaultAction) {
+           $data['default_action'] = $this->defaultAction->toArray();
+        }
 
         $buttonData = [];
         foreach ($this->buttons as $button) {
@@ -76,5 +85,41 @@ class TemplateElement extends SendBaseModel
         $data['buttons'] = $buttonData;
 
         return $data;
+    }
+
+    public function withTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    public function withSubtitle($subtitle)
+    {
+        $this->subtitle = $subtitle;
+
+        return $this;
+    }
+
+    public function withImageUrl($imageUrl)
+    {
+        $this->imageUrl = $imageUrl;
+
+        return $this;
+    }
+
+    public function withDefaultAction(URLButton $button)
+    {
+        $this->defaultAction = $button;
+
+        return $this;
+    }
+
+    public function withButtons(array $buttons)
+    {
+        // TODO: Validate buttons
+        $this->buttons = $buttons; // Assuming types are buttons
+
+        return $this;
     }
 }
