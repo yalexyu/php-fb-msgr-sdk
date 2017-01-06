@@ -57,4 +57,18 @@ class GenericTemplateAttachment extends TemplateAttachment
 
         return $data;
     }
+
+    public function withElements(array $elements)
+    {
+        $this->elements = $elements;
+
+        return $this;
+    }
+
+    public function addElement(GenericTemplateElement $element)
+    {
+        $this->elements[] = $element;
+
+        return $this;
+    }
 }

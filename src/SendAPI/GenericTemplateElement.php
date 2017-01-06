@@ -122,4 +122,11 @@ class GenericTemplateElement extends SendBaseModel
 
         return $this;
     }
+
+    public function addButton(Button $button)
+    {
+        $this->buttons[] = $button;
+
+        return $this;
+    }
 }
