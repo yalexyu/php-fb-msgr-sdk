@@ -63,6 +63,10 @@ class SendMessage extends SendBaseModel
             $data['attachment'] = $this->attachment->toArray();
         }
 
+        if ($this->metadata) {
+            $data['metadata'] = $this->metadata;
+        }
+
         if (count($this->quickReplies) > 0) {
             $quickReplies = [];
             foreach ($this->quickReplies as $quickReply) {
