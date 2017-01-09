@@ -89,10 +89,15 @@ class URLButton extends Button
         $data = [
             'type' => $this->getType(),
             'url' => $this->url,
-            'webview_height_ratio' => $this->webviewHeightRatio,
         ];
 
+        if ($this->webviewHeightRatio) {
+            $data['webview_height_ratio'] = $this->webviewHeightRatio;
+        }
+
         if (!$this->isDefaultAction || $this->title) {
+            // It's considered an error if title is not set and the button
+            // is not the default action.
             $data['title'] = $this->title;
         }
 
@@ -102,5 +107,19 @@ class URLButton extends Button
         }
 
         return $data;
+    }
+
+    public function withTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    public function withUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
     }
 }
