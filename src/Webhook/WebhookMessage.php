@@ -61,7 +61,10 @@ class Message extends WebhookBaseModel
         $this->mid = $data['mid'];
         $this->seq = $data['seq'];
         $this->text = $data['text'];
-        $this->quickReplyPayload = $data['quick_reply']['payload'];
+
+        // This is only set if a quick_reply payload exists
+        $this->quickReplyPayload = (isset($data['quick_reply']) && isset($data['quick_reply']['payload']))
+            ? $data['quick_reply']['payload'] : null;
 
         $attachmentsData = isset($data['attachments']) ? $data['attachments'] : [];
         $this->attachments = [];
