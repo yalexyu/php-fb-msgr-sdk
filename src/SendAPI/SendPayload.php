@@ -12,7 +12,7 @@ namespace FBMSGR\SendAPI;
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference#payload
  * @package App\Models\Daisy
  */
-class SendPayload extends SendBaseModel
+abstract class SendPayload extends SendBaseModel implements HasPageAccessToken, HasSendAPIURL
 {
 
     /**
@@ -58,10 +58,6 @@ class SendPayload extends SendBaseModel
     const NOTIFICATION_TYPE_REGULAR = 'REGULAR';
     const NOTIFICATION_TYPE_SILENT_PUSH = 'SILENT_PUSH';
     const NOTIFICATION_TYPE_NO_PUSH = 'NO_PUSH';
-
-    // TODO: Separate out of class
-    const SEND_API_URL = 'https://graph.facebook.com/v2.6/me/messages';
-    const PAGE_ACCESS_TOKEN = 'EAASMflp7ebwBADZCh74bQ8Vz244HZB92lojskX7dXeXg2Mn11o62GEH1NZA8ERNPfErnVG2l3MY3nTf19lHZBUgaBI2FHYrlnQOFddiqmw56COV2LFdhc33FzhrwcsB1lzeKuZBWXorn2vyLtbZCfzLQDsRv6ZCKS3XGa7utCyb4gZDZD';
 
     /**
      * @see SendBaseModel
@@ -194,7 +190,7 @@ class SendPayload extends SendBaseModel
     public function send()
     {
         // Init curl handle with corresponding FB url & a valid access token.
-        $ch = curl_init(self::SEND_API_URL . '?access_token=' . self::PAGE_ACCESS_TOKEN);
+        $ch = curl_init($this->getSendAPIURL() . '?access_token=' . $this->getPageAccessToken());
 
         // Set POST fields, including access_token
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($this->toArray()));
