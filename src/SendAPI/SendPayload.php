@@ -171,6 +171,9 @@ abstract class SendPayload extends SendBaseModel implements HasPageAccessToken, 
      |----------------------------
      */
 
+    /**
+     * @return SendMessage
+     */
     public function getMessage()
     {
         return $this->message;
