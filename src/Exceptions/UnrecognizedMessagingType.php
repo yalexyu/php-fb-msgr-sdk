@@ -7,9 +7,13 @@
 
 namespace FBMSGR\Exceptions;
 
-
 use Exception;
 
+/**
+ * Class UnrecognizedMessagingType
+ *
+ * @package FBMSGR\Exceptions
+ */
 class UnrecognizedMessagingType extends \Exception
 {
 

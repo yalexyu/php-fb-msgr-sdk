@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class Button
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons
  * @package FBMSGR\SendAPI
  */

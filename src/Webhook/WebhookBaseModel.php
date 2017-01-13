@@ -9,6 +9,7 @@ namespace FBMSGR\Webhook;
 
 /**
  * Class WebhookBaseModel
+ *
  * @package FBMSGR\Webhook
  */
 abstract class WebhookBaseModel

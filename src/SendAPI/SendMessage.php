@@ -8,9 +8,10 @@
 namespace FBMSGR\SendAPI;
 
 /**
- * Class Message
+ * Class SendMessage
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference#message
- * @package App\Models\Daisy\SendAPI
+ * @package FBMSGR\SendAPI
  */
 class SendMessage extends SendBaseModel
 {

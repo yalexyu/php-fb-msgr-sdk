@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class VideoAttachment
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/video-attachment
  * @package FBMSGR\SendAPI
  */

@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class ShareButton
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/share-button
  * @package FBMSGR\SendAPI
  */

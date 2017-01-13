@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class PostbackButton
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/postback-button
  * @package FBMSGR\SendAPI
  */

@@ -8,11 +8,10 @@
 namespace FBMSGR\Webhook;
 
 /**
- * Describes an event entry, which contains data pertaining to the FB msgr event.
- *
  * Class Entry
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference#entry
- * @package App\Models\Daisy
+ * @package FBMSGR\SendAPI
  */
 class Entry extends WebhookBaseModel
 {

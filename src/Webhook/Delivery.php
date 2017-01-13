@@ -9,8 +9,9 @@ namespace FBMSGR\Webhook;
 
 /**
  * Class Delivery
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-delivered#delivery
- * @package App\Models\Daisy
+ * @package FBMSGR\SendAPI
  */
 class Delivery extends WebhookBaseModel
 {

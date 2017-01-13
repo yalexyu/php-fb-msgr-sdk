@@ -9,8 +9,9 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class ButtonTemplateAttachment
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/button-template
- * @package App\Models\Daisy\SendAPI
+ * @package FBMSGR\SendAPI
  */
 class ButtonTemplateAttachment extends TemplateAttachment
 {

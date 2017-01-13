@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class GenericTemplateAttachment
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/generic-template
  * @package FBMSGR\SendAPI
  */

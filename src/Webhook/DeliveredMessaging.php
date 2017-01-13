@@ -9,6 +9,7 @@ namespace FBMSGR\Webhook;
 
 /**
  * Class DeliveredMessaging
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-delivered
  * @package FBMSGR\Webhook
  */

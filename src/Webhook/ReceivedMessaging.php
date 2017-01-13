@@ -9,6 +9,7 @@ namespace FBMSGR\Webhook;
 
 /**
  * Class ReceivedMessaging
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference/message
  * @package FBMSGR\Webhook
  */
@@ -17,7 +18,7 @@ class ReceivedMessaging extends Messaging
     /**
      * The Message object that was received.
      *
-     * @var Message
+     * @var WebhookMessage
      */
     protected $message;
 
@@ -37,11 +38,11 @@ class ReceivedMessaging extends Messaging
         parent::__construct($data);
 
         $this->timestamp = $this->data['timestamp'];
-        $this->message = new Message($this->data['message']);
+        $this->message = new WebhookMessage($this->data['message']);
     }
 
     /**
-     * @return Message
+     * @return WebhookMessage
      */
     public function getMessage()
     {

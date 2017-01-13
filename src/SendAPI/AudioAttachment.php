@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class AudioAttachment
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/audio-attachment
  * @package FBMSGR\SendAPI
  */

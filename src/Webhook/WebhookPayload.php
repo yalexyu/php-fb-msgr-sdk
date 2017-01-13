@@ -8,12 +8,10 @@
 namespace FBMSGR\Webhook;
 
 /**
- * Describes the typical payload POSTed from Facebook Messenger. Each payload corresponds to
- * some object and describes the corresponding event in the form of an event *entry*.
- *
  * Class WebhookPayload
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference#payload
- * @package App\Models\Daisy
+ * @package FBMSGR\SendAPI
  */
 class WebhookPayload extends WebhookBaseModel
 {

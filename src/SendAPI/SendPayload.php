@@ -8,9 +8,10 @@
 namespace FBMSGR\SendAPI;
 
 /**
- * Class Payload. Wraps messages and other payloads being sent.
+ * Class SendPayload
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference#payload
- * @package App\Models\Daisy
+ * @package FBMSGR\SendAPI
  */
 abstract class SendPayload extends SendBaseModel implements HasPageAccessToken, HasSendAPIURL
 {

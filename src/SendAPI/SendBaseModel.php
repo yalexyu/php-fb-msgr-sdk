@@ -8,7 +8,8 @@
 namespace FBMSGR\SendAPI;
 
 /**
- * Class BaseModel
+ * Class SendBaseModel
+ *
  * @package AlexYu\SendAPI
  */
 abstract class SendBaseModel

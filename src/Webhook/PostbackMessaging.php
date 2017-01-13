@@ -9,6 +9,7 @@ namespace FBMSGR\Webhook;
 
 /**
  * Class PostbackMessaging
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference/postback
  * @package FBMSGR\Webhook
  */

@@ -9,8 +9,9 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class QuickReply
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/quick-replies#quick_reply
- * @package App\Models\Daisy\SendAPI
+ * @package FBMSGR\SendAPI
  */
 class QuickReply extends SendBaseModel
 {

@@ -9,6 +9,7 @@ namespace FBMSGR\Webhook;
 
 /**
  * Class SentMessageResponse
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference#response
  * @package FBMSGR\Webhook
  */

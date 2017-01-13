@@ -13,13 +13,13 @@ use FBMSGR\Exceptions\UnrecognizedMessagingType;
  * Class Messaging
  *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference#messaging
- * @package App\Models\Daisy
+ * @package FBMSGR\SendAPI
  */
 abstract class Messaging extends WebhookBaseModel
 {
 
     /**
-     * Message Types
+     * Messaging Types
      */
     const TYPE_RECEIVED = 'received';
     const TYPE_DELIVERED = 'delivered';

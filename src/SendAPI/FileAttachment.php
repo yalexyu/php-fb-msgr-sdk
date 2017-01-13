@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class FileAttachment
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/file-attachment
  * @package FBMSGR\SendAPI
  */

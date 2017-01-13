@@ -9,6 +9,7 @@ namespace FBMSGR\SendAPI;
 
 /**
  * Class MultimediaAttachment
+ * @see https://developers.facebook.com/docs/messenger-platform/send-api-reference/contenttypes
  * @package FBMSGR\SendAPI
  */
 abstract class MultimediaAttachment extends SendAttachment

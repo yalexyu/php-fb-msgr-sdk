@@ -8,11 +8,12 @@
 namespace FBMSGR\Webhook;
 
 /**
- * Class Message
+ * Class WebhookMessage
+ *
  * @see https://developers.facebook.com/docs/messenger-platform/webhook-reference/message
  * @package FBMSGR\Webhook
  */
-class Message extends WebhookBaseModel
+class WebhookMessage extends WebhookBaseModel
 {
 
     /**
